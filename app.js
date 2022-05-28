@@ -1,4 +1,4 @@
-//let numberOfQuestions = 29;
+let numberOfQuestions = 10;
 
 let userInputs = [
   "merchant",

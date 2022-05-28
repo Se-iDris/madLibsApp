@@ -1,3 +1,26 @@
+for (let i = question; i >= 0; i--) {
+  console.log(i);
+}
+
+let queationArray = [
+  prompt("Please enter a noun", "i.e merchant"),
+  prompt("Please Enter another noun", "i.e business"),
+  prompt("Please Enter a property", "i.e gifts"),
+  prompt("Please Enter an adjective", "i.e fell"),
+  prompt("Please enter another noun", "i.e beast"),
+  prompt("Please enter another adjective", "i.e ugly"),
+  prompt("Please enter period of Time", "i.e week"),
+  prompt("Please enter another noun", "i.e amphitheater, arena, garden"),
+  prompt("Please enter another adjective", "i.e selfishly"),
+  prompt(
+    "Please enter something created either animate or inanimate: such as. a human being. a being of anomalous or uncertain aspect or nature."
+  ),
+  prompt(
+    "Please enter someword causing a strong feeling of dislike or disinclination"
+  ),
+  prompt("Please enter someword pleasing or agreeable to the senses"),
+];
+
 let numberOfQuestions = 10;
 
 let userInputs = [

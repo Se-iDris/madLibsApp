@@ -33,6 +33,8 @@ for (let i = questions; i >= 0; i--) {
   questions--;
 }
 
+alert("All done! Ready for your totally-accurate, not-at-all confusing??'");
+
 let originalStory = ` <h2> Many years ago, a ${userInputs[0]} had six daughters. The first five were born when ${userInputs[1]} was good, and he spoiled them rotten. How they loved their fine clothes, pearl necklaces, and pretty ponies! The youngest came as a ${userInputs[2]}  to brighten up hard times. Her name was Belle and she was beautiful in name, looks, and temper.
 The ${userInputs[0]} was due to go abroad. He asked the girls what ${userInputs[2]} he should bring back. The elder sisters demanded expensive things, but Belle asked merely for a red rose.
 I am sorry to say that the ${userInputs[1]} trip went badly. The ${userInputs[0]}’s ship failed to come in, and he could not afford to buy the promised presents for his daughters. On his journey home, lost in thought, he took a wrong turn. Darkness ${userInputs[3]} and a storm blew up. Then, quite unexpectedly, in the middle of a forest, he came to a place where the sun was shining. He followed a long avenue of trees until he came upon a palace with a beautiful ${userInputs[7]} . As he wandered around the grounds, his eyes ${userInputs[3]} upon a red rose and he thought, “Ah! A ${userInputs[2]}  for my Belle!” As he picked the rose, a growling voice startled him from behind:
@@ -64,6 +66,7 @@ He made no reply. She kissed the mottled back of his head, and as she did so, he
 And that was the story of Beauty and the ${userInputs[4]} , told by me Emma for Storynory.</h2>`;
 
 console.log(originalStory);
+document.write(originalStory);
 
 /*let userInputs = [
   "merchant",

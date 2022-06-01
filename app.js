@@ -1,60 +1,37 @@
-for (let i = question; i >= 0; i--) {
-  console.log(i);
+let questions = 10;
+
+let questionCounter = 0;
+
+let questionArray = [
+  "Please enter a noun i.e merchant",
+  "Please Enter another noun i.e business",
+  "Please Enter a property i.e gifts",
+  "Please Enter an adjective i.e fell",
+  "Please enter another noun i.e beast",
+  "Please enter another adjective i.e ugly",
+  "Please enter period of Time i.e week",
+  "Please enter another noun i.e amphitheater, arena, garden",
+  "Please enter another adjective i.e selfishly",
+  "Please enter something created either animate or inanimate: such as. a human being. a being of anomalous or uncertain aspect or nature.",
+  "Please enter someword causing a strong feeling of dislike or disinclination",
+  "Please enter someword pleasing or agreeable to the senses",
+];
+
+let userInputs = [];
+
+for (let i = questions; i >= 0; i--) {
+  console.log(
+    questionArray[questionCounter] + `...  (${questions} questions left)`
+  );
+  userInputs.push(
+    prompt(
+      questionArray[questionCounter] + `...  (${questions} questions left)`
+    )
+  );
+  console.log(userInputs);
+  questionCounter++;
+  questions--;
 }
-
-let queationArray = [
-  prompt("Please enter a noun", "i.e merchant"),
-  prompt("Please Enter another noun", "i.e business"),
-  prompt("Please Enter a property", "i.e gifts"),
-  prompt("Please Enter an adjective", "i.e fell"),
-  prompt("Please enter another noun", "i.e beast"),
-  prompt("Please enter another adjective", "i.e ugly"),
-  prompt("Please enter period of Time", "i.e week"),
-  prompt("Please enter another noun", "i.e amphitheater, arena, garden"),
-  prompt("Please enter another adjective", "i.e selfishly"),
-  prompt(
-    "Please enter something created either animate or inanimate: such as. a human being. a being of anomalous or uncertain aspect or nature."
-  ),
-  prompt(
-    "Please enter someword causing a strong feeling of dislike or disinclination"
-  ),
-  prompt("Please enter someword pleasing or agreeable to the senses"),
-];
-
-let numberOfQuestions = 10;
-
-let userInputs = [
-  "merchant",
-  "business",
-  "gifts",
-  "fell",
-  "beast",
-  "ugly",
-  "week",
-  "garden",
-  "selfishly",
-  "creachers",
-  "discusting",
-  "soft",
-  "it",
-  "soda can",
-  "burped",
-  "May, 4th 1983",
-  "42",
-  "socks",
-  "MoMA",
-  "London, England",
-  "strong",
-  "black hole",
-  "Liberachi",
-  "Cher",
-  "3000",
-  "bedtime story",
-  "explosion",
-  "derrigable",
-  "duck call",
-  "sing",
-];
 
 let originalStory = ` <h2> Many years ago, a ${userInputs[0]} had six daughters. The first five were born when ${userInputs[1]} was good, and he spoiled them rotten. How they loved their fine clothes, pearl necklaces, and pretty ponies! The youngest came as a ${userInputs[2]}  to brighten up hard times. Her name was Belle and she was beautiful in name, looks, and temper.
 The ${userInputs[0]} was due to go abroad. He asked the girls what ${userInputs[2]} he should bring back. The elder sisters demanded expensive things, but Belle asked merely for a red rose.
@@ -85,8 +62,38 @@ A flurry and fluttering led Belle to a grotto at the end of the ${userInputs[7]}
 “Not when you are sweet and kind,” she whispered. “Oh ${userInputs[4]}  I see that you are sick. You are not going to die are you?”
 He made no reply. She kissed the mottled back of his head, and as she did so, he gradually transformed into a handsome man, a prince, and that very same day Beauty and the ${userInputs[4]}  were wed.
 And that was the story of Beauty and the ${userInputs[4]} , told by me Emma for Storynory.</h2>`;
-//let usersInput = [];
 
 console.log(originalStory);
 
-// For De-Bugging:
+/*let userInputs = [
+  "merchant",
+  "business",
+  "gifts",
+  "fell",
+  "beast",
+  "ugly",
+  "week",
+  "garden",
+  "selfishly",
+  "creachers",
+  "discusting",
+  "soft",
+  "it",
+  "soda can",
+  "burped",
+  "May, 4th 1983",
+  "42",
+  "socks",
+  "MoMA",
+  "London, England",
+  "strong",
+  "black hole",
+  "Liberachi",
+  "Cher",
+  "3000",
+  "bedtime story",
+  "explosion",
+  "derrigable",
+  "duck call",
+  "sing",
+];*/
